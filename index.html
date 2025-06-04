@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Grocery Website</title>
+
+    <!--Font Awesome Website Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!------Header----->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            <i class="fa-solid fa-crown"></i> Freshify
+        </a>
+
+        <!----Navigation Bar-->
+        <nav class="navbar">
+            <div class="dropDown">
+                <a href="frozen.php">Frozen</a>
+                <div class="dropDown-content">
+                    <a href="frozen.php?filter=meals">Meals</a>
+                    <a href="frozen.php?filter=desserts">Desserts</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="fresh.php">Fresh</a>
+                <div class="dropDown-content">
+                    <a href="fresh.php?filter=fruits">Fruits</a>
+                    <a href="fresh.php?filter=steak">Steak</a>
+                    <a href="fresh.php?filter=cheese">Cheese</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="beverages.php">Beverages</a>
+                <div class="dropDown-content">
+                    <a href="beverages.php?filter=coffee">Coffee</a>
+                    <a href="beverages.php?filter=tea">Tea</a>
+                    <a href="beverages.php?filter=chocolate">Chocolate</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="homeuse.php">HomeUse</a>
+                <div class="dropDown-content">
+                    <a href="homeuse.php?filter=cleaning">Cleaning</a>
+                    <a href="homeuse.php?filter=health">Health</a>
+                </div>
+            </div>
+            <div class="dropDown">
+                <a href="petfood.php">PetFood</a>
+                <div class="dropDown-content">
+                    <a href="petfood.php?filter=cat">Cat Food</a>
+                    <a href="petfood.php?filter=dog">Dog Food</a>
+                    <a href="petfood.php?filter=bird">Bird Food</a>
+                    <a href="petfood.php?filter=fish">Fish Food</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="storeIcons">
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.php" id="cart-btn" class="fas fa-shopping-cart"></a>
+        </div>
+
+        <form action="" class="search-form" method="get">
+            <input type="search" name="search" id="search-box" placeholder="Search products...">
+            <button type="submit" class="fas fa-search" style="background:none;border:none;"></button>
+            <div id="search-hints"></div>
+        </form>
+    </header>
+    
+    <!---Welcome to Freshify---->
+    <div class="welcome-message">
+        <p>Welcome to Freshify - Best Grocery Prices!</p>
+    </div>
+
+    <!----javascript---->
+    <script src="script.js"></script>
+</body>
+</html>
