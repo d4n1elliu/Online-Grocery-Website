@@ -1,4 +1,4 @@
-# Online-Grocery-Website-
+# Online-Grocery-Website
 
 This project is a dynamic website which simulates an online grocery shopping experience. 
 It allows users to browse products, manage a shopping cart and proceed through with a checkout process. 
